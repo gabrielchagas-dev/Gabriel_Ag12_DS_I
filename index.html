@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Define o idioma e a estrutura principal do documento. -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Texto que aparece na aba do navegador. -->
+  <title>Meus sites favoritos</title>
+  <style>
+    /* Aparencia geral da pagina. */
+    body { margin: 0; background: #eef2f7; color: #243247; font-family: Arial, sans-serif; }
+    header { background: #203b62; color: white; padding: 28px 20px; text-align: center; }
+    header h1 { font-size: 28px; margin: 0 0 12px; }
+    header p { margin: 0; line-height: 1.5; }
+    /* Flexbox organiza os sites e permite quebrar a linha em telas pequenas. */
+    main { max-width: 1100px; margin: 28px auto; padding: 0 18px; display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
+    .site { background: white; border: 1px solid #d4dce6; border-radius: 10px; padding: 20px; width: 285px; text-align: center; }
+    .site h1 { font-size: 22px; margin: 0 0 18px; }
+    /* As cinco imagens ficam na mesma pasta que este HTML. */
+    .site img { width: 100px; height: 100px; object-fit: contain; }
+    .site p { font-size: 14px; line-height: 1.5; margin: 12px 0 0; }
+    a { color: #194b9b; }
+    a:hover { color: #7134a8; }
+    a:focus-visible { outline: 3px solid #285fc1; outline-offset: 5px; }
+    footer { text-align: center; padding: 10px 18px 28px; font-size: 13px; color: #536075; }
+    @media (max-width: 420px) { .site { width: 100%; } header h1 { font-size: 24px; } }
+  </style>
+</head>
+<body>
+  <!-- Titulo principal do corpo da pagina com o nome do aluno. -->
+  <header>
+    <h1>Meus sites favoritos: Gabriel das Chagas Silva</h1>
+    <p>Uma página para reunir sites de entretenimento, pesquisa e programação.</p>
+  </header>
+  <!-- Cada bloco apresenta o nome, a imagem, o link e uma descricao. -->
+  <main>
+    <!-- Site 1: nome acima da imagem e link abaixo dela. -->
+    <section class="site">
+      <h1>YouTube</h1>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+        <img src="youtube.png" alt="Ícone do site YouTube" width="128" height="128">
+      </a>
+      <p><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Acessar YouTube</a></p>
+      <p>Vídeos, músicas e conteúdos para aprender coisas novas.</p>
+    </section>
+    <!-- Site 2: nome acima da imagem e link abaixo dela. -->
+    <section class="site">
+      <h1>Spotify</h1>
+      <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">
+        <img src="spotify.png" alt="Ícone do site Spotify" width="128" height="128">
+      </a>
+      <p><a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Acessar Spotify</a></p>
+      <p>Músicas e podcasts para ouvir no tempo livre.</p>
+    </section>
+    <!-- Site 3: nome acima da imagem e link abaixo dela. -->
+    <section class="site">
+      <h1>GitHub</h1>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <img src="github.png" alt="Ícone do site GitHub" width="128" height="128">
+      </a>
+      <p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Acessar GitHub</a></p>
+      <p>Projetos de programação e códigos para estudar.</p>
+    </section>
+    <!-- Site 4: nome acima da imagem e link abaixo dela. -->
+    <section class="site">
+      <h1>Wikipédia</h1>
+      <a href="https://pt.wikipedia.org/" target="_blank" rel="noopener noreferrer">
+        <img src="wikipedia.png" alt="Ícone do site Wikipédia" width="128" height="128">
+      </a>
+      <p><a href="https://pt.wikipedia.org/" target="_blank" rel="noopener noreferrer">Acessar Wikipédia</a></p>
+      <p>Informações gerais para começar uma pesquisa.</p>
+    </section>
+    <!-- Site 5: nome acima da imagem e link abaixo dela. -->
+    <section class="site">
+      <h1>Twitch</h1>
+      <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
+        <img src="twitch.png" alt="Ícone do site Twitch" width="128" height="128">
+      </a>
+      <p><a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">Acessar Twitch</a></p>
+      <p>Transmissões ao vivo de jogos e outros conteúdos.</p>
+    </section>
+  </main>
+  <footer>Gabriel das Chagas Silva — Agenda 12 — Desenvolvimento de Sistemas I</footer>
+</body>
+</html>
